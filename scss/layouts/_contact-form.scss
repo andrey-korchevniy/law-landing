@@ -14,4 +14,12 @@
     padding-top: 13px;
     color: $color-font-light;
   }
+
+  &__hero-form__form {
+    padding: 30px;
+  }
+
+  &__field {
+    display: block;
+  }
 }

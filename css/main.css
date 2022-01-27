@@ -126,8 +126,8 @@ body {
   -ms-flex-line-pack: end;
       align-content: flex-end;
   height: 375px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(80%, rgba(0, 0, 0, 0.9))), url(/images/korchevniy-hero_1x.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.9) 80%), url(/images/korchevniy-hero_1x.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(80%, rgba(0, 0, 0, 0.9))), url(../images/korchevniy-hero_1x.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.9) 80%), url(../images/korchevniy-hero_1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0%;
@@ -158,5 +158,13 @@ h1 {
   letter-spacing: 1px;
   padding-top: 13px;
   color: #ffffff;
+}
+
+.hero-form__hero-form__form {
+  padding: 30px;
+}
+
+.hero-form__field {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
