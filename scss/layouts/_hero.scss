@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+  align-content: flex-end;
+  height: 375px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(256, 256, 256, 0) 60%,
+      rgba(0, 0, 0, 0.9) 80%
+    ),
+    url(/images/korchevniy-hero_1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+
+  // padding-top: 250px;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $ff-accent;
+  color: $color-font-light;
+  font-size: 35px;
+  max-width: 400px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.accent {
+  color: $color-accent;
+}

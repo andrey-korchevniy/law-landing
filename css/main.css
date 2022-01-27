@@ -102,7 +102,7 @@ body {
   padding-top: 10px;
   padding-left: 10px;
   background-color: #463db0;
-  margin-right: 8px;
+  margin-right: 15px;
   margin-left: auto;
 }
 
@@ -117,5 +117,47 @@ body {
 .nav__svg {
   width: 27px;
   height: 27px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  height: 375px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(80%, rgba(0, 0, 0, 0.9))), url(/images/korchevniy-hero_1x.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.9) 80%), url(/images/korchevniy-hero_1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Manrope, sans-serif;
+  color: #ffffff;
+  font-size: 35px;
+  max-width: 400px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.accent {
+  color: #ffe400;
+}
+
+.hero-form__title {
+  display: block;
+  background-color: #463db0;
+  height: 50px;
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 13px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

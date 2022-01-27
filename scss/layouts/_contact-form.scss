@@ -1,0 +1,18 @@
+.hero-form {
+  //   display: block;
+  //   background-color: $color-accent-2;
+  //   height: 50px;
+
+  &__title {
+    display: block;
+    background-color: $color-accent-2;
+    height: 50px;
+    text-align: center;
+    font-family: $ff-accent;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 13px;
+    color: $color-font-light;
+  }
+}
