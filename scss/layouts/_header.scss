@@ -14,9 +14,10 @@
   }
 
   &__tel {
-    position: relative;
     min-width: 47px;
     min-height: 47px;
+    padding-top: 10px;
+    padding-left: 10px;
     background-color: $color-accent-2;
 
     margin-right: 8px;
@@ -24,35 +25,15 @@
   }
 
   &__menu {
-    position: relative;
     min-width: 47px;
     min-height: 47px;
+    padding-top: 10px;
+    padding-left: 10px;
     background-color: $color-accent;
   }
 
-  .nav__tel::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background-image: url("/images/phone-icon.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: 11px;
-    top: 11px;
-    width: 25px;
-    height: 25px;
-  }
-
-  .nav__menu::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background-image: url("/images/menu-icon.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: 11px;
-    top: 11px;
-    width: 25px;
-    height: 25px;
+  &__svg {
+    width: 27px;
+    height: 27px;
   }
 }

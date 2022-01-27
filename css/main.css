@@ -97,44 +97,25 @@ body {
 }
 
 .nav__tel {
-  position: relative;
   min-width: 47px;
   min-height: 47px;
+  padding-top: 10px;
+  padding-left: 10px;
   background-color: #463db0;
   margin-right: 8px;
   margin-left: auto;
 }
 
 .nav__menu {
-  position: relative;
   min-width: 47px;
   min-height: 47px;
+  padding-top: 10px;
+  padding-left: 10px;
   background-color: #ffe400;
 }
 
-.nav .nav__tel::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background-image: url("/images/phone-icon.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  left: 11px;
-  top: 11px;
-  width: 25px;
-  height: 25px;
-}
-
-.nav .nav__menu::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background-image: url("/images/menu-icon.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  left: 11px;
-  top: 11px;
-  width: 25px;
-  height: 25px;
+.nav__svg {
+  width: 27px;
+  height: 27px;
 }
 /*# sourceMappingURL=main.css.map */
