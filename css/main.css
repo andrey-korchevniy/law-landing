@@ -116,7 +116,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  background-image: url(/images/phone-icon.svg);
+  background-image: url("/images/phone-icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
   left: 11px;
@@ -129,7 +129,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  background-image: url(/images/menu-icon.svg);
+  background-image: url(./images/menu-icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
   left: 11px;
