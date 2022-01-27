@@ -1,7 +1,5 @@
 .hero-form {
-  //   display: block;
-  //   background-color: $color-accent-2;
-  //   height: 50px;
+  background-color: $color-bg-dark;
 
   &__title {
     background-color: $color-accent-2;
@@ -15,11 +13,32 @@
     color: $color-font-light;
   }
 
-  &__hero-form__form {
+  &__form {
     padding: 30px;
   }
 
   &__field {
     display: block;
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    position: relative;
+    background: #000;
+    width: 100%;
+    height: 43px;
+  }
+
+  &__input::after {
+    content: "";
+    position: absolute;
+    display: block;
+
+    top: 55px;
+    width: 100px;
+    height: 55px;
+    background-color: red;
+    margin-bottom: 25px;
+    outline: 1px solid tomato;
   }
 }
