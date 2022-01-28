@@ -1,17 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $color-bg-light;
-
   font-family: $ff-primary;
   color: $color-font-primary;
   font-size: $fs-primary;
 }
-
-// .section {
-//   padding: 60px 0 60px 0;
-//   @media screen and (min-width: 1200px) {
-//     padding: 94px 0 94px 0;
-//   }
-// }
 
 .container {
   width: 100%;

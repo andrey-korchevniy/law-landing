@@ -44,15 +44,15 @@
   <h1> <span class="accent">Позовні заяви<br> </span>Професійно<br> <span class="accent">З гарантією</span></h1>
 </section>
 <section class="hero-form" id="form-hero-id">
-  <a href="#form-hero-id"> <p class="hero-form__title">Замовити Консультацію</p></a>
-  <form class="hero-form__form" name="signup_form" autocomplete="on" novalidate>
+  <a class="link" href="#form-hero-id"> <p class="hero-form__title">Замовити Консультацію</p></a>
+  <form class="hero-form__form container" name="signup_form" autocomplete="on" validate>
     
     <label class="hero-form__field">
-      <input class="hero-form__input" type="text" name="name" autocomplete="name" placeholder="Ім'я"/>
+      <input class="hero-form__input" type="text" name="name" autocomplete="name" placeholder="Ім'я" required/>
     </label>
   
     <label class="hero-form__field">
-      <input class="hero-form__input" type="phone" name="phone" autocomplete="tel-national" placeholder="Телефон"/>
+      <input class="hero-form__input" type="phone" name="phone" autocomplete="tel-national" placeholder="Телефон" required />
     </label>
 
     <label class="hero-form__field">
@@ -60,11 +60,23 @@
     </label>
 
     <label class="hero-form__text">
-      <textarea class="hero-form__textarea" name="feedback" rows="5" placeholder="Опишіть проблему"></textarea>
+      <textarea class="hero-form__textarea" name="feedback" rows="5" placeholder="Котротко  опишіть  проблему" required ></textarea>
     </label>
   
-    <button type="submit">Submit</button>
+    <button class="hero-form__submit" type="submit">ВІДПРАВИТИ</button>
   </form>
+  <ul class="hero-form__list container">
+    <li class="hero-form__message hero-form__message--viber">
+      <a href="https://viber.click/380505946780">Написати у Viber</a>
+    </li>
+    <li class="hero-form__message hero-form__message--telegram">
+      <a href="https://t.me/andreykorchevny">написати у Telegram</a>
+    </li>
+    <li class="hero-form__message hero-form__message--whatsapp">
+      <a href="https://wa.me/380505946780?text=Потрібна%20ваша%20допомога%20">написати у WhatsApp</a>
+    </li>
+  </ul>
+
 </section>
 
 </main>
