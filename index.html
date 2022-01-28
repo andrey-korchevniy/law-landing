@@ -43,23 +43,24 @@
 <section class="hero">
   <h1> <span class="accent">Позовні заяви<br> </span>Професійно<br> <span class="accent">З гарантією</span></h1>
 </section>
-<section class="hero-form">
-  <p class="hero-form__title">Записаться На Консультацію</p>
+<section class="hero-form" id="form-hero-id">
+  <a href="#form-hero-id"> <p class="hero-form__title">Замовити Консультацію</p></a>
   <form class="hero-form__form" name="signup_form" autocomplete="on" novalidate>
+    
     <label class="hero-form__field">
-      <input class="hero-form__input" type="email" name="email" />
+      <input class="hero-form__input" type="text" name="name" autocomplete="name" placeholder="Ім'я"/>
     </label>
   
     <label class="hero-form__field">
-      <input class="hero-form__input" type="phone" name="password" />
+      <input class="hero-form__input" type="phone" name="phone" autocomplete="tel-national" placeholder="Телефон"/>
     </label>
 
     <label class="hero-form__field">
-      <input class="hero-form__input" type="email" name="password" />
+      <input class="hero-form__input" type="email" name="password" autocomplete="email" placeholder="e-mail"/>
     </label>
 
-    <label class="hero-form__field">
-      <textarea class="hero-form__input" name="feedback" rows="5" placeholder="Type your message here..."></textarea>
+    <label class="hero-form__text">
+      <textarea class="hero-form__textarea" name="feedback" rows="5" placeholder="Опишіть проблему"></textarea>
     </label>
   
     <button type="submit">Submit</button>
