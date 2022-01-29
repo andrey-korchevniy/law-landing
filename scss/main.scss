@@ -3,6 +3,9 @@
 @import "./base/body";
 @import "./base/vhidden";
 
+@import "./components/buttons";
+@import "./components/mixins";
+
 @import "./layouts/_header";
 @import "./layouts/hero";
 @import "./layouts/contact-form";

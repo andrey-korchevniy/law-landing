@@ -17,34 +17,18 @@
   }
 
   &__tel {
+    @include button($color-accent-2, 10px) padding-left: 10px;
     min-width: 47px;
     min-height: 47px;
-    padding-top: 10px;
-    padding-left: 10px;
-    background-color: $color-accent-2;
-
     margin-right: 15px;
     margin-left: auto;
-    border-radius: 4px;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(256, 256, 256, 0) 30%,
-      rgba(0, 0, 0, 0.3) 80%
-    );
   }
 
   &__menu {
     min-width: 47px;
     min-height: 47px;
-    padding-top: 10px;
+    @include button($color-accent, 10px);
     padding-left: 10px;
-    background-color: $color-accent;
-    border-radius: 4px;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(256, 256, 256, 0) 30%,
-      rgba(0, 0, 0, 0.3) 80%
-    );
   }
 
   &__svg {
