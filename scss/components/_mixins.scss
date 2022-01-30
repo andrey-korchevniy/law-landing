@@ -25,3 +25,12 @@
   height: 1px;
   background-color: #ffffff;
 }
+
+@mixin accent-text($fs, $fw, $lh, $ls, $color) {
+  font-family: $ff-accent;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $color;
+}

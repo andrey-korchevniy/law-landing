@@ -1,6 +1,7 @@
 .header {
   background-color: $color-bg-dark;
   position: sticky;
+  z-index: 100;
   width: 100%;
   top: 0;
 }
@@ -17,7 +18,8 @@
   }
 
   &__tel {
-    @include button($color-accent-2, 10px) padding-left: 10px;
+    @include button($color-accent-2, 10px);
+    padding-left: 10px;
     min-width: 47px;
     min-height: 47px;
     margin-right: 15px;

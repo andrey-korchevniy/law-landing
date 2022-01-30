@@ -1,0 +1,58 @@
+.process {
+  background-color: #040031;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+  &__title {
+    @include accent-text(32px, 700, 1.2, 2px, $color-accent);
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    @include accent-text(20px, 700, 1.2, 0.5px, #f0f0f0);
+    margin-bottom: 25px;
+  }
+
+  &__item-text {
+    color: #c0c0c0;
+    font-size: 18px;
+    text-align: right;
+    margin-bottom: 30px;
+    margin-left: 100px;
+  }
+
+  &__item-title::first-letter {
+    display: block;
+    padding-right: 15px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    font-weight: 700;
+    color: $color-accent;
+    line-height: 30px;
+    float: left;
+  }
+
+  &__text {
+    color: #c0c0c0;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    @include button($color-accent, 0);
+    max-width: 300px;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    align-items: center;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
+  }
+
+  &__btn-text {
+    @include accent-text(24px, 800, 1.55, 0px, $color-font-dark);
+  }
+}

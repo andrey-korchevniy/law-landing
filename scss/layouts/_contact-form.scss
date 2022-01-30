@@ -1,5 +1,6 @@
 .hero-form {
   background-color: $color-bg-dark;
+  padding-bottom: 30px;
 
   &__title {
     min-height: 47px;
@@ -50,11 +51,9 @@
 
   &__submit {
     @include button($color-accent, 0);
+    @include accent-text(24px, 800, 1, 0.5px, $color-font-dark);
     width: 100%;
     border: 0px;
-    font-family: $ff-accent;
-    font-size: 24px;
-    font-weight: 700;
   }
 
   // -----------КНОПКИ МЕСЕНДЖЕРОВ ----------------
@@ -81,7 +80,7 @@
 
   &__link {
     display: flex;
-    max-width: 250px;
+    max-width: 254px;
     height: 100%;
     padding-top: 6px;
     padding-left: 5px;

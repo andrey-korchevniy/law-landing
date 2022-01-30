@@ -185,6 +185,7 @@ textarea:focus:-ms-input-placeholder {
   background-color: #000000;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 100;
   width: 100%;
   top: 0;
 }
@@ -268,6 +269,7 @@ h1 {
 
 .hero-form {
   background-color: #000000;
+  padding-bottom: 30px;
 }
 
 .hero-form__title {
@@ -314,11 +316,14 @@ h1 {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255, 255, 255, 0)), color-stop(80%, rgba(0, 0, 0, 0.3)));
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.3) 80%);
   background-color: #ffe400;
-  width: 100%;
-  border: 0px;
   font-family: Manrope, sans-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #000000;
+  width: 100%;
+  border: 0px;
 }
 
 .hero-form__list {
@@ -361,7 +366,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 250px;
+  max-width: 254px;
   height: 100%;
   padding-top: 6px;
   padding-left: 5px;
@@ -387,5 +392,239 @@ h1 {
 .hero-form__link div {
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.about {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-image: url(../images/bgc-about1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__title {
+  padding-bottom: 40px;
+  border-bottom: 10px solid #ffe400;
+  margin-bottom: 40px;
+  font-family: Manrope, sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  line-height: 1.22;
+}
+
+.about__text, .about__item {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.about__item::first-letter {
+  display: block;
+  padding-right: 15px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffe400;
+  line-height: 30px;
+  float: left;
+}
+
+.expert {
+  padding-bottom: 50px;
+  background-image: url(../images/bgc-about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.expert__photo {
+  width: 100%;
+  padding-top: 80%;
+  background-image: url(../images/team-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.expert__year {
+  width: 100%;
+  height: 175px;
+  background-color: #040031;
+  padding-top: 10px;
+}
+
+.expert__number {
+  font-family: Manrope, sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.expert__text {
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 2px;
+  color: #ffe400;
+  text-align: center;
+}
+
+.expert__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 47px;
+  padding-top: 0;
+  border-radius: 4px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255, 255, 255, 0)), color-stop(80%, rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.3) 80%);
+  background-color: #463db0;
+  width: 175px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
+          box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
+}
+
+.expert__btn-text {
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.55;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.expert__arrow {
+  position: absolute;
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  top: 50%;
+  -webkit-transform: translate(50px, -50%);
+          transform: translate(50px, -50%);
+}
+
+.process {
+  background-color: #040031;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.process__title {
+  font-family: Manrope, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  color: #ffe400;
+  margin-bottom: 30px;
+}
+
+.process__item-title {
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  color: #f0f0f0;
+  margin-bottom: 25px;
+}
+
+.process__item-text {
+  color: #c0c0c0;
+  font-size: 18px;
+  text-align: right;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+.process__item-title::first-letter {
+  display: block;
+  padding-right: 15px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffe400;
+  line-height: 30px;
+  float: left;
+}
+
+.process__text {
+  color: #c0c0c0;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.process__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 47px;
+  padding-top: 0;
+  border-radius: 4px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255, 255, 255, 0)), color-stop(80%, rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.3) 80%);
+  background-color: #ffe400;
+  max-width: 300px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 70%);
+          transform: translate(-50%, 70%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
+          box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
+}
+
+.process__btn-text {
+  font-family: Manrope, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.55;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.garant {
+  padding-top: 70px;
+  padding-bottom: 10px;
+  background-image: url(../images/bgc-about1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.garant__title {
+  padding-bottom: 40px;
+  border-bottom: 10px solid #ffe400;
+  margin-bottom: 40px;
+  font-family: Manrope, sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  line-height: 1.22;
+}
+
+.garant__text {
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+.expert {
+  padding-bottom: 50px;
+  background-image: 
+  // linear-gradient(160deg, #dddbef 60%, #ffffff 90%),
+    url(../images/bgc-about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__photo {
+    width: 100%;
+    padding-top: 80%;
+    background-image: url(../images/team-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  &__year {
+    width: 100%;
+    height: 175px;
+    background-color: #040031;
+    padding-top: 10px;
+  }
+
+  &__number {
+    @include accent-text(54px, 700, 1.6, 4px, $color-font-light);
+    text-align: center;
+  }
+
+  &__text {
+    @include accent-text(18px, 400, 1.55, 2px, $color-accent);
+    text-align: center;
+  }
+
+  &__button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    @include button($color-accent-2, 0);
+    width: 175px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
+  }
+
+  &__btn-text {
+    @include accent-text(14px, 800, 1.55, 2px, $color-font-light);
+  }
+
+  &__arrow {
+    position: absolute;
+    fill: $color-font-light;
+    width: 16px;
+    height: 16px;
+    justify-self: center;
+    top: 50%;
+    transform: translate(50px, -50%);
+  }
+}
