@@ -26,6 +26,7 @@
   background-color: #ffffff;
 }
 
+// -------------- ТЕКСТ АКЦЕНТА ----------------
 @mixin accent-text($fs, $fw, $lh, $ls, $color) {
   font-family: $ff-accent;
   font-size: $fs;

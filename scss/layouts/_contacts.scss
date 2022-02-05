@@ -1,0 +1,35 @@
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000000;
+  text-align: center;
+
+  &__name,
+  &__web,
+  &__place,
+  &__tel,
+  &__mail {
+    text-decoration: none;
+    font-style: normal;
+    @include accent-text(18px, 700, 1.6, 1, $color-font-light);
+  }
+
+  &__web,
+  &__mail {
+    color: #9691d2;
+  }
+
+  &__place {
+    font-weight: 400;
+  }
+
+  &__tel {
+    color: $color-accent;
+  }
+
+  &__map {
+    margin-top: 30px;
+    width: 100vw;
+    height: 40vw;
+  }
+}

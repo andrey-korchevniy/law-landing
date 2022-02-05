@@ -31,11 +31,48 @@
         </svg>
       </a>
 
-    <a class="nav__menu" href="">
+            <!-- ------- КНОПКА МОБИЛЬНОГО ОКНА ------ -->
+    <button class="nav__btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn>
       <svg class="nav__svg">
           <use href="./images/symbol-defs.svg#icon-menu"></use>
       </svg>
-    </a>
+    </button>
+            
+            <!-- ---------------НАВИГАЦИЯ-------------- -->
+    <div class="nav__menu js-menu-container" id="mobile-menu">
+      <ul class="nav container-mob">
+        <li class="nav__item">
+          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#form-hero-id">
+            Замовити консультацію
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#about-id">
+            Позовні заяви
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#team-id">
+            Про нас
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#process-id">
+            З чого почати
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#garant-id">
+            Гарантія
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#contacts-id">
+            Контакти
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
 
@@ -100,7 +137,7 @@
 </section>
 
 <!-- ----------------------- ПРО ПОСЛУГУ --------------------- -->
-<section  class="about">
+<section  class="about" id="about-id">
   <div class="container">
     <h2 class="about__title">Правильна позовна заява – основа успіху</h2>
     <p class="about__text">Якісна підготовка позову – самий важливий етап судової справи.</p>
@@ -118,7 +155,7 @@
 </section>
 
 <!-- ----------------------------- ПРО НАС ------------------------  -->
-<section class="expert">
+<section class="expert" id="team-id">
   <h2 class="visually-hidden">Досвідчені юристи</h2>
   <div class="expert__photo"></div>
   <div class="expert__year">
@@ -133,7 +170,9 @@
   </a>
 </section>
 
-<section class="process">
+
+<!-- ------------------------------ ЧТО НУЖНО СДЕЛАТЬ ---------- -->
+<section class="process" id="process-id">
   <div class="container">
   <h2 class="visually-hidden">Процедура підготовки позову</h2>
   <p class="process__title">Що треба зробити вам:</p>
@@ -183,7 +222,8 @@
   </a>
 </section>
 
-<section class="garant">
+<!-- ----------------------------- ГАРАНТИЯ ----------------- -->
+<section class="garant" id="garant-id">
   <div class="container">
     <h2 class="garant__title">Гарантія</h2>
     <p class="garant__text">Ми гарантуємо якість та професійність своєї роботи. Наші позови відповідають всім вимогам закону. </p>
@@ -192,8 +232,55 @@
   </div>
 </section>
 
+<section class="participation ">
+  <div class="container"></div>
+  <h2 class="visually-hidden">Членство у професійних організаціях</h2>
+  <ul class="participation__list">
+    <li class="participation__item">
+      <img class="participation__img" src="./images/logo-naau.png" alt="логотип національної асоціації адвокатів України">
+    </li>
+    <li class="participation__item">
+      <img class="participation__img" src="./images/logo-apu.png" alt="логотип асоціації правників України">
+    </li>
+        <li class="participation__item">
+          <img class="participation__img" src="./images/logo-ao.png" alt="логотип асоціації правників України">
+        </li>
+  </ul>
+</section>
+</div>
+
+<section class="contacts" id="contacts-id">
+  <div class="container">
+  <h2 class="visually-hidden">Констакти адвокатського об'єднання максимум лекс</h2>
+  <address class="contacts__address">
+    <p><a class="contacts__name" href=www.maximumlex.com">Адвокатське об'єднання "Максимум Лекс"</a></p>
+    <p ><a class="contacts__web" href="www.maximumlex.com">www.maximumlex.com</a></p>
+    <p class="contacts__place">проспект Перемоги, 26, офіс 2</p>
+    <p class="contacts__place">Київ, 04116, Україна</p>
+    <p><a class="contacts__tel" href="tel:+380505946780">+38 050 594 67 80</a></p>
+    <p><a class="contacts__tel" href="tel:+380735946780">+38 073 594 67 80</a></p>
+    <p><a class="contacts__mail" href="mailto:ao.maximumlex@gmail.com">ao.maximumlex@gmail.com</a></p>
+  </address>
+  </div>
+    <iframe class="contacts__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4467846014722!2d30.466327941251436!3d50.45140437677968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce83c23be29f%3A0xb70f1efa66110d4c!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1644080797785!5m2!1sru!2sua"
+      allowfullscreen="" loading="lazy">
+    </iframe>
+</section>
 </main>
+<footer class="footer">
+  <div class="container">
+  <p class="footer__text"> Адвокатське об'єднання "Максимум Лекс" - українська юридична компанія, одним з основних напрямків якоє є судова практика. Дозвольте нашій команді адвокатів допомогти вам.</p>
+  <p class="footer_right">Copyright © 2022 АО "Максимум Лекс". 
+    <a href="mailto:andrey.kor4evny@gmail.com">Зв'язатися з розробником сайту.</a>
+  </p>
+  </div>
+</footer>
 
 
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
