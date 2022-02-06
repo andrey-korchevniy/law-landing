@@ -1,16 +1,14 @@
 .garant {
   padding-top: 87px;
   padding-bottom: 10px;
-  background-image: 
-  // linear-gradient(144deg, #f8f8f8 50%, #dddbef 100%),
-    url(../images/bgc-about1.jpg);
+  background-image: url(../images/bgc-about1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   &__title {
+    margin-bottom: 40px;
     padding-bottom: 40px;
     border-bottom: 10px solid $color-accent;
-    margin-bottom: 40px;
 
     font-family: $ff-accent;
     font-size: 32px;
@@ -19,7 +17,7 @@
   }
 
   &__text {
-    font-size: 18px;
     margin-bottom: 30px;
+    font-size: 18px;
   }
 }

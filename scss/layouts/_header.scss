@@ -1,45 +1,75 @@
 .header {
-  background-color: $color-bg-dark;
-  position: sticky;
   z-index: 100;
-  width: 100%;
+  position: sticky;
   top: 0;
+  width: 100%;
+  background-color: $color-bg-dark;
 }
 
 .nav {
   display: flex;
-  align-items: center;
-  padding-bottom: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
 
   &__logo {
     height: 47px;
     padding-right: 10px;
+
+    @media screen and (min-width: 768px) {
+      height: 57px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &__tel {
-    @include button($color-accent-2, 10px);
-    padding-left: 10px;
+    @include button($color-accent-2, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 47px;
-    min-height: 47px;
     margin-right: 15px;
     margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+      width: 57px;
+      height: 57px;
+    }
   }
 
   &__btn {
-    border: 0;
-    min-width: 47px;
-    min-height: 47px;
-    max-width: 47px;
-    max-width: 47px;
     @include button($color-accent, 7px);
+    min-width: 47px;
     padding-left: 7px;
-    border: 0;
+
+    @media screen and (min-width: 768px) {
+      width: 57px;
+      height: 57px;
+    }
   }
 
   &__svg {
     width: 27px;
     height: 27px;
+    transition: width 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__svg:hover,
+  &__svg:focus {
+    width: 34px;
+    height: 34px;
+    align-self: center;
+
+    @media screen and (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__item {
@@ -49,26 +79,37 @@
   &__link {
     @include accent-text(30px, 500, 1, 1, $color-font-light);
     text-align: left;
+    transition: font-size 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $color-accent;
+    font-size: 44px;
   }
 }
 
 .nav__menu {
   z-index: 99;
   position: fixed;
+  width: 90vw;
   top: 87px;
   right: 0;
   height: 100vh;
-  width: 90vw;
   overflow: hidden;
-  background-color: $color-bg-card;
   opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: none;
-  // outline: 1px solid tomato;
+  background-color: $color-bg-card;
+  border-left: 3px solid $color-accent;
+  transform: translateX(100%);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &.is-open {
     opacity: 1;
-    display: block;
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 55vw;
   }
 }
 
@@ -76,17 +117,17 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
   width: 100%;
+  max-width: 480px;
   height: calc(100vh - 48px);
-  align-items: flex-start;
-  align-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 48px;
   padding-left: 40px;
 
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid tomato;
+  align-items: flex-start;
+  align-content: space-between;
+
   color: #ffffff;
-  text-decoration: none;
 }

@@ -1,9 +1,6 @@
 .expert {
   padding-top: 87px;
   padding-bottom: 20px;
-  // background-image:
-  // linear-gradient(160deg, #dddbef 60%, #ffffff 90%),
-  // url(../images/bgc-about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -13,14 +10,15 @@
     background-image: url(../images/team-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
     text-align: center;
   }
 
   &__year {
     width: 100%;
     height: 175px;
-    background-color: #040031;
     padding-top: 10px;
+    background-color: #040031;
   }
 
   &__number {
@@ -34,16 +32,23 @@
   }
 
   &__button {
+    @include button($color-accent-2, 0);
     display: flex;
     position: relative;
+    align-items: center;
     justify-content: center;
-    @include button($color-accent-2, 0);
     width: 175px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    align-items: center;
     margin-bottom: 50px;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
+
+    transform: translate(-50%, -50%);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.8);
   }
 
   &__btn-text {
@@ -52,11 +57,10 @@
 
   &__arrow {
     position: absolute;
-    fill: $color-font-light;
+    top: 50%;
     width: 16px;
     height: 16px;
-    justify-self: center;
-    top: 50%;
+    fill: $color-font-light;
     transform: translate(50px, -50%);
   }
 }

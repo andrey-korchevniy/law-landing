@@ -2,6 +2,7 @@
   padding-top: 87px;
   padding-bottom: 50px;
   background-color: #000000;
+
   text-align: center;
 
   &__name,
@@ -9,9 +10,22 @@
   &__place,
   &__tel,
   &__mail {
-    text-decoration: none;
-    font-style: normal;
     @include accent-text(18px, 700, 1.6, 1, $color-font-light);
+    font-style: normal;
+    transition: font-size 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__name:focus,
+  &__web:focus,
+  &__place:focus,
+  &__tel:focus,
+  &__mail:focus,
+  &__name:hover,
+  &__web:hover,
+  &__place:hover,
+  &__tel:hover,
+  &__mail:hover {
+    font-size: 20px;
   }
 
   &__web,
@@ -28,8 +42,8 @@
   }
 
   &__map {
-    margin-top: 30px;
     width: 100vw;
     height: 60vw;
+    margin-top: 30px;
   }
 }

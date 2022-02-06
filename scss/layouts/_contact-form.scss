@@ -1,6 +1,13 @@
 .hero-form {
-  background-color: $color-bg-dark;
   padding-bottom: 30px;
+  background-color: $color-bg-dark;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    max-width: calc(100vw - 450px);
+  }
 
   &__title {
     min-height: 47px;
@@ -14,11 +21,18 @@
     font-weight: 600;
     letter-spacing: 1px;
     color: $color-font-light;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__title:hover,
+  &__title:focus {
+    color: $color-accent;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
   }
 
   &__form {
-    padding: 30px;
-    padding-bottom: 15px;
+    padding: 30px 30px 15px 30px;
   }
 
   &__field,
@@ -44,9 +58,9 @@
 
   &__text::before {
     @extend %form-line;
-    margin-bottom: 0px;
-    bottom: 0px;
     top: unset;
+    bottom: 0px;
+    margin-bottom: 0px;
   }
 
   &__submit {
@@ -54,6 +68,12 @@
     @include accent-text(24px, 800, 1, 0.5px, $color-font-dark);
     width: 100%;
     border: 0px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__submit:hover,
+  &__submit:focus {
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
   }
 
   // -----------КНОПКИ МЕСЕНДЖЕРОВ ----------------
@@ -64,6 +84,7 @@
 
   &__message {
     margin-bottom: 15px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &--whatsapp {
       @include button(#43d854, 0);
@@ -78,14 +99,19 @@
     }
   }
 
+  &__message:hover,
+  &__message:focus {
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.5);
+  }
+
   &__link {
     display: flex;
     max-width: 254px;
     height: 100%;
-    padding-top: 6px;
-    padding-left: 5px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 6px;
+    padding-left: 5px;
   }
 
   &__svg {
@@ -96,10 +122,10 @@
   }
 
   &__sm-text {
+    margin-left: 10px;
     padding-top: 6px;
     color: white;
-    text-decoration: none;
-    margin-left: 10px;
+
     font-size: 20px;
   }
 }

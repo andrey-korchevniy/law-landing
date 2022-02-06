@@ -1,8 +1,9 @@
 .hero {
-  display: flex;
-  align-content: flex-end;
   height: 375px;
   padding-bottom: 10px;
+
+  display: flex;
+  align-content: flex-end;
 
   background-image: linear-gradient(
       to bottom,
@@ -13,10 +14,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0%;
+
+  @media screen and (min-width: 768px) {
+    height: 700px;
+    background-position: right;
+    position: relative;
+    font-size: 40px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(256, 256, 256, 0) 80%,
+        rgba(0, 0, 0, 0.9) 90%
+      ),
+      url(../images/korchevniy-hero-tab1.jpg);
+  }
 }
 
 h1 {
-  max-width: 400px;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -25,6 +39,14 @@ h1 {
   color: $color-font-light;
   font-size: 35px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: calc(100vw - 450px);
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 40px;
+  }
 }
 
 .accent {
