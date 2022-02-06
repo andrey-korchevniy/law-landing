@@ -388,7 +388,7 @@ textarea:focus:-ms-input-placeholder {
 
 @media screen and (min-width: 768px) {
   .hero {
-    height: 700px;
+    height: 750px;
     background-position: right;
     position: relative;
     font-size: 40px;
@@ -413,7 +413,7 @@ h1 {
     position: absolute;
     width: calc(100vw - 450px);
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 40px;
   }
 }
@@ -430,15 +430,18 @@ h1 {
 @media screen and (min-width: 768px) {
   .hero-form {
     position: absolute;
-    top: 300px;
+    top: 290px;
     left: 50px;
+    border-radius: 4px;
     max-width: calc(100vw - 450px);
+    padding-bottom: 5px;
   }
 }
 
 .hero-form__title {
   min-height: 47px;
   padding-top: 10px;
+  border-radius: 4px;
   background-color: #463db0;
   text-align: center;
   font-family: Manrope, sans-serif;
@@ -459,7 +462,13 @@ h1 {
 }
 
 .hero-form__form {
-  padding: 30px 30px 15px 30px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-form__form {
+    max-width: 100%;
+  }
 }
 
 .hero-form__field, .hero-form__text {
@@ -468,8 +477,20 @@ h1 {
   margin-bottom: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-form__field, .hero-form__text {
+    margin-bottom: 20px;
+  }
+}
+
 .hero-form__input {
   height: 43px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-form__input {
+    height: 30px;
+  }
 }
 
 .hero-form__field::before {
@@ -511,8 +532,14 @@ h1 {
 }
 
 .hero-form__list {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-form__list {
+    max-width: calc(100vw - 450px);
+  }
 }
 
 .hero-form__message {
@@ -521,6 +548,12 @@ h1 {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-form__message {
+    margin-bottom: 10px;
+  }
 }
 
 .hero-form__message--whatsapp {
@@ -598,6 +631,12 @@ h1 {
   background-image: url(../images/bgc-about1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 97px;
+  }
 }
 
 .about__title {

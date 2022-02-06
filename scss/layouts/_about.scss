@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 97px;
+  }
+
   &__title {
     margin-bottom: 40px;
     padding-bottom: 40px;

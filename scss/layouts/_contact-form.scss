@@ -4,14 +4,17 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 300px;
+    top: 290px;
     left: 50px;
+    border-radius: 4px;
     max-width: calc(100vw - 450px);
+    padding-bottom: 5px;
   }
 
   &__title {
     min-height: 47px;
     padding-top: 10px;
+    border-radius: 4px;
     background-color: $color-accent-2;
     @extend %shadow;
 
@@ -32,7 +35,11 @@
   }
 
   &__form {
-    padding: 30px 30px 15px 30px;
+    padding: 10px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   &__field,
@@ -40,11 +47,19 @@
     position: relative;
     display: block;
     margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__input {
     @extend %form-field;
     height: 43px;
+
+    @media screen and (min-width: 768px) {
+      height: 30px;
+    }
   }
 
   &__textarea {
@@ -78,13 +93,21 @@
 
   // -----------КНОПКИ МЕСЕНДЖЕРОВ ----------------
   &__list {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media screen and (min-width: 768px) {
+      max-width: calc(100vw - 450px);
+    }
   }
 
   &__message {
     margin-bottom: 15px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
 
     &--whatsapp {
       @include button(#43d854, 0);
