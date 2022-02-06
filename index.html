@@ -39,35 +39,35 @@
     </button>
             
             <!-- ---------------НАВИГАЦИЯ-------------- -->
-    <div class="nav__menu js-menu-container" id="mobile-menu">
+    <div class="nav__menu js-menu-container js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#form-hero-id"" id="mobile-menu">
       <ul class="nav container-mob">
         <li class="nav__item">
-          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#form-hero-id">
+          <a class="nav__link link" href="#form-hero-id">
             Замовити консультацію
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#about-id">
+          <a class="nav__link link" href="#about-id">
             Позовні заяви
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#team-id">
+          <a class="nav__link link" href="#team-id">
             Про нас
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#process-id">
+          <a class="nav__link link" href="#process-id">
             З чого почати
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#garant-id">
+          <a class="nav__link link" href="#garant-id">
             Гарантія
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link link js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#contacts-id">
+          <a class="nav__link link" href="#contacts-id">
             Контакти
           </a>
         </li>
@@ -85,7 +85,8 @@
 <!-- ---------------- ФОРМА НА ГЕРОЕ --------------- -->
 <section class="hero-form" id="form-hero-id">
   <a class="link" href="#form-hero-id"> <p class="hero-form__title">Замовити Консультацію</p></a>
-  <form class="hero-form__form container" name="signup_form" autocomplete="on" validate>
+
+  <form class="hero-form__form container" name="signup_form" autocomplete="on" validate action="send.php" method="post">
     
     <label class="hero-form__field">
       <input class="hero-form__input" type="text" name="name" autocomplete="name" placeholder="Ім'я" required/>
@@ -96,11 +97,11 @@
     </label>
 
     <label class="hero-form__field">
-      <input class="hero-form__input" type="email" name="password" autocomplete="email" placeholder="e-mail"/>
+      <input class="hero-form__input" type="email" name="email" autocomplete="email" placeholder="e-mail"/>
     </label>
 
     <label class="hero-form__text">
-      <textarea class="hero-form__textarea" name="feedback" rows="5" placeholder="Котротко  опишіть  проблему" required ></textarea>
+      <textarea class="hero-form__textarea" name="note" rows="5" placeholder="Котротко  опишіть  проблему" required ></textarea>
     </label>
   
     <button class="hero-form__submit" type="submit">ВІДПРАВИТИ</button>
@@ -182,7 +183,7 @@
       <p class="process__item-text">Опишіть проблему, ми разом узгодимо день і час консультації онлайн або в офісі.</p>
     </li>
     <li class="process__item">
-      <h3 class="process__item-title">2. Надайте для вивчення документи.</h3>
+      <h3 class="process__item-title">2. Надайте для вивчення документи</h3>
       <p class="process__item-text">Надішліть їхні копії зручним для вас способом або надайте під час консультації.</p>
     </li>
     <li class="process__item">
@@ -190,7 +191,7 @@
       <p class="process__item-text"></p>
     </li>
     <li class="process__item">
-      <h3 class="process__item-title">3. Отримайте консультацію.</h3>
+      <h3 class="process__item-title">3. Отримайте консультацію</h3>
       <p class="process__item-text">Разом розберемо ситуацію, ми оцінимо вартість роботи. Якщо замовите у нас підготовку позову, консультація буде
       безкоштовною.</p>
     </li>
@@ -232,8 +233,9 @@
   </div>
 </section>
 
+<!-- --------------------------- УЧАСТИЕ В ОРГАНИЗАЦИЯХ -------------------------- -->
 <section class="participation ">
-  <div class="container"></div>
+  <div class="container">
   <h2 class="visually-hidden">Членство у професійних організаціях</h2>
   <ul class="participation__list">
     <li class="participation__item">
@@ -246,9 +248,13 @@
           <img class="participation__img" src="./images/logo-ao.png" alt="логотип асоціації правників України">
         </li>
   </ul>
-</section>
 </div>
+<a class="link" href="#form-hero-id">
+  <p class="hero-form__title">Замовити Консультацію</p>
+</a>
+</section>
 
+<!-- --------------------------- КОНТАКТЫ ------------------------------- -->
 <section class="contacts" id="contacts-id">
   <div class="container">
   <h2 class="visually-hidden">Констакти адвокатського об'єднання максимум лекс</h2>
@@ -266,12 +272,17 @@
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4467846014722!2d30.466327941251436!3d50.45140437677968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce83c23be29f%3A0xb70f1efa66110d4c!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1644080797785!5m2!1sru!2sua"
       allowfullscreen="" loading="lazy">
     </iframe>
+      <a class="process__button link" href="#form-hero-id">
+        <p class="process__btn-text">ЗВ'ЯЗАТИСЯ З НАМИ</p>
+      </a>
 </section>
 </main>
+
+<!-- ---------------------------------------- фУТЕР ------------------------- -->
 <footer class="footer">
   <div class="container">
-  <p class="footer__text"> Адвокатське об'єднання "Максимум Лекс" - українська юридична компанія, одним з основних напрямків якоє є судова практика. Дозвольте нашій команді адвокатів допомогти вам.</p>
-  <p class="footer_right">Copyright © 2022 АО "Максимум Лекс". 
+  <p class="footer__text"> Адвокатське об'єднання "Максимум Лекс" - українська юридична компанія, однією зі спеціалізацій якої є судова практика. Дозвольте нашій команді адвокатів допомогти вам.</p>
+  <p class="footer_right">© 2022 АО "Максимум Лекс". 
     <a href="mailto:andrey.kor4evny@gmail.com">Зв'язатися з розробником сайту.</a>
   </p>
   </div>

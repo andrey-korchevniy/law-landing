@@ -708,7 +708,7 @@ h1 {
 }
 
 .contacts {
-  padding-top: 50px;
+  padding-top: 87px;
   padding-bottom: 50px;
   background-color: #000000;
   text-align: center;
@@ -740,7 +740,7 @@ h1 {
 .contacts__map {
   margin-top: 30px;
   width: 100vw;
-  height: 40vw;
+  height: 60vw;
 }
 
 .footer {
