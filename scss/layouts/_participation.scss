@@ -3,8 +3,21 @@
   padding-bottom: 50px;
   background-color: #000000;
 
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
   &__item {
     margin-bottom: 30px;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 45px;
+    }
   }
 
   &__img {

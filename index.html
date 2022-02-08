@@ -79,12 +79,12 @@
 <main>
   <!-- -------------- ГЕРОЙ --------------- -->
 <section class="hero">
-    <h1> <span class="accent">Позовні заяви<br> </span>Професійно<br> <span class="accent">З гарантією</span></h1>
+    <h1> <span class="accent" id="form-hero-id">Позовні заяви<br> </span>Професійно<br> <span class="accent">З гарантією</span></h1>
 
 </section>
 
 <!-- ---------------- ФОРМА НА ГЕРОЕ --------------- -->
-<section class="hero-form" id="form-hero-id">
+<section class="hero-form" >
   <a class="link" href="#form-hero-id"> <p class="hero-form__title">Замовити Консультацію</p></a>
 
   <form class="hero-form__form container" name="signup_form" autocomplete="on" validate action="send.php" method="post">
@@ -140,120 +140,130 @@
 </section>
 
 <!-- ---------------- ПРО ПОСЛУГУ --------------------- -->
-<section  class="about" id="about-id">
-  <div class="container">
-    <h2 class="about__title">Правильна позовна заява – основа успіху</h2>
-    <p class="about__text">Якісна підготовка позову – самий важливий етап судової справи.</p>
-    <p class="about__text">Обов’язково потрібно:</p>
-    <ul class="about__link">
-      <li class="about__item">1. <b>Дослідити </b>наявні документи</li>
-      <li class="about__item">2. Досконало <b>розібратися </b>з ситуацією</li>
-      <li class="about__item">3. <b>Розробити</b> правові позиції, обрати найбільш вдалу</li>
-      <li class="about__item">4. Якщо необхідно, <b>отримати</b> додаткові докази</li>
-      <li class="about__item">5. <b>Скласти </b>позовну заяву, яка відповідає вимогам закону</li>
-      <li class="about__item">6. <b>Сплатити</b> судовий збір</li>
-      <li class="about__item">7. <b>Подати </b> позов по процедурі, яка передбачена законом саме для такої заяви</li>
-    </ul>
-  </div>
-</section>
+<div class="about-expert">
 
-<!-- ---------------- ПРО НАС ------------------------  -->
-<section class="expert" id="team-id">
-  <h2 class="visually-hidden">Досвідчені юристи</h2>
-  <div class="expert__photo"></div>
-  <div class="expert__year">
-    <p class="expert__number">74 роки</p>
-    <p class="expert__text">спільного  юридичного  досвіду</p>
-  </div>
-  <a class="expert__button" href="https://www.maximumlex.com/attorneys/" target="_blank">
-    <p class="expert__btn-text">ПРО НАС</p>
-    <svg class="expert__arrow">
-      <use href="images/icons.svg#icon-arrow"></use>
-    </svg>
-  </a>
-</section>
+  <section  class="about" id="about-id">
+    <div class="container">
+      <h2 class="about__title">Як скласти позов</h2>
+      <p class="about__text">Правильна позовна заява – основа успіху. Якісна підготовка позову – самий важливий етап судової справи.</p>
+      <p class="about__text">Обов’язково потрібно:</p>
+      <ul class="about__link">
+        <li class="about__item">1. <b>Дослідити </b>наявні документи</li>
+        <li class="about__item">2. Досконало <b>розібратися </b>з ситуацією</li>
+        <li class="about__item">3. <b>Розробити</b> правові позиції, обрати найбільш вдалу</li>
+        <li class="about__item">4. Якщо необхідно, <b>отримати</b> додаткові докази</li>
+        <li class="about__item">5. <b>Скласти </b>позовну заяву, яка відповідає вимогам закону</li>
+        <li class="about__item">6. <b>Сплатити</b> судовий збір</li>
+        <li class="about__item">7. <b>Подати </b> позов по процедурі, яка передбачена законом саме для такої заяви</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ---------------- ПРО НАС ------------------------  -->
+  <section class="expert" id="team-id">
+    <h2 class="visually-hidden">Досвідчені юристи</h2>
+    <div class="expert__photo"></div>
+    <div class="expert__year">
+      <p class="expert__number">74 роки</p>
+      <p class="expert__text">спільного  юридичного  досвіду</p>
+    </div>
+    <a class="expert__button" href="https://www.maximumlex.com/attorneys/" target="_blank">
+      <p class="expert__btn-text">ПРО НАС</p>
+      <svg class="expert__arrow">
+        <use href="images/icons.svg#icon-arrow"></use>
+      </svg>
+    </a>
+  </section>
+</div>
 
 <!-- ---------------- ЧТО НУЖНО СДЕЛАТЬ ---------- -->
 <section class="process" id="process-id">
   <div class="container">
-  <h2 class="visually-hidden">Процедура підготовки позову</h2>
-  <p class="process__title">Що треба зробити вам:</p>
-  <ul>
-    <li class="process__item">
-      <h3 class="process__item-title">1. Зателефонуйте або напишіть нам</h3>
-      <p class="process__item-text">Опишіть проблему, ми разом узгодимо день і час консультації онлайн або в офісі.</p>
-    </li>
-    <li class="process__item">
-      <h3 class="process__item-title">2. Надайте для вивчення документи</h3>
-      <p class="process__item-text">Надішліть їхні копії зручним для вас способом або надайте під час консультації.</p>
-    </li>
-    <li class="process__item">
-      <h3 class="process__item-title"></h3>
-      <p class="process__item-text"></p>
-    </li>
-    <li class="process__item">
-      <h3 class="process__item-title">3. Отримайте консультацію</h3>
-      <p class="process__item-text">Разом розберемо ситуацію, ми оцінимо вартість роботи. Якщо замовите у нас підготовку позову, консультація буде
-      безкоштовною.</p>
-    </li>
-  </ul>
+    <h2 class="visually-hidden">Процедура підготовки позову</h2>
+    <div class="our-process">
+      <p class="process__title">Що треба зробити вам:</p>
+      <ul>
+        <li class="process__item">
+          <h3 class="process__item-title">1. Зателефонуйте або напишіть нам</h3>
+          <p class="process__item-text">Опишіть проблему, ми разом узгодимо день і час консультації онлайн або в офісі.</p>
+        </li>
+        <li class="process__item">
+          <h3 class="process__item-title">2. Надайте для вивчення документи</h3>
+          <p class="process__item-text">Надішліть їхні копії зручним для вас способом або надайте під час консультації.</p>
+        </li>
+        <li class="process__item">
+          <h3 class="process__item-title"></h3>
+          <p class="process__item-text"></p>
+        </li>
+        <li class="process__item">
+          <h3 class="process__item-title">3. Отримайте консультацію</h3>
+          <p class="process__item-text">Разом розберемо ситуацію, ми оцінимо вартість роботи. Якщо замовите у нас підготовку позову, консультація буде
+          безкоштовною.</p>
+        </li>
+      </ul>
+    </div>
 
-  <p class="process__title">Що зробимо ми:</p>
-  <ul>
-    <li class="process__item">
-      <h3 class="process__item-title">4. Вивчимо справу, запропонуємо варіанти вирішення</h3>
-      <p class="process__item-text">Ви оберете найбільш прийнятний для себе варіант з урахуванням наших порад.</p>
-    </li>
-    <li class="process__item">
-      <h3 class="process__item-title">5. Підготуємо позов</h3>
-      <p class="process__item-text">Текст позовної заяви буде повністю відповідати закону й обраній правовій позиції. Сформуємо необхідні додатки до заяви.</p>
-    </li>
-    <li class="process__item">
-      <h3 class="process__item-title">6. Подамо позов</h3>
-      <p class="process__item-text">Ми самі подамо позов до суду згідно процедури, яка прописана в законі.</p>
-    </li>
-    <li class="process__item">
-      <h3 class="process__item-title">7. Проконтролюємо, щоб позов був прийнятий судом</h3>
-      <p class="process__item-text"></p>
-    </li>
-  </ul>
-  <p class="process__text">Якщо ви захочете, ми будемо вести справу у суді.</p>
-</div>
-  <a class="process__button link" href="#form-hero-id">
-    <p class="process__btn-text">ЗВ'ЯЗАТИСЯ З НАМИ</p>
-  </a>
-</section>
+    <div class="client-process">
+      <p class="process__title">Що зробимо ми:</p>
+      <ul>
+        <li class="process__item">
+          <h3 class="process__item-title">4. Вивчимо справу, запропонуємо варіанти вирішення</h3>
+          <p class="process__item-text">Ви оберете найбільш прийнятний для себе варіант з урахуванням наших порад.</p>
+        </li>
+        <li class="process__item">
+          <h3 class="process__item-title">5. Підготуємо позов</h3>
+          <p class="process__item-text">Текст позовної заяви буде повністю відповідати закону й обраній правовій позиції. Сформуємо необхідні додатки до заяви.</p>
+        </li>
+        <li class="process__item">
+          <h3 class="process__item-title">6. Подамо позов</h3>
+          <p class="process__item-text">Ми самі подамо позов до суду згідно процедури, яка прописана в законі.</p>
+        </li>
+        <li class="process__item">
+          <h3 class="process__item-title">7. Проконтролюємо, щоб позов був прийнятий судом</h3>
+          <p class="process__item-text"></p>
+        </li>
+      </ul>
+      <p class="process__text">Якщо ви захочете, ми будемо вести справу у суді.</p>
 
-<!-- ---------------- ГАРАНТИЯ ----------------- -->
-<section class="garant" id="garant-id">
-  <div class="container">
-    <h2 class="garant__title">Гарантія</h2>
-    <p class="garant__text">Ми гарантуємо якість та професійність своєї роботи. Наші позови відповідають всім вимогам закону. </p>
-    <p class="garant__text">Але іноді трапляються випадки, коли судді неправомірно не приймають до розгляду позовні заяви. У такій ситуації ми зробимо все, щоб справу було відкрито і ми не будем брати за цю роботу додаткову оплату.</p>
-      <p class="garant__text">Якщо суд так і не прийме до розгляду заяву, яку ми підготували та подали, ми повернемо 100% суми, яку отримали від вас у якості оплати нашої роботи. </p>
+      <a class="process__button link" href="#form-hero-id">
+        <p class="process__btn-text">ЗВ'ЯЗАТИСЯ З НАМИ</p>
+      </a>
+    </div>
   </div>
 </section>
 
-<!-- ---------------- УЧАСТИЕ В ОРГАНИЗАЦИЯХ -------------------------- -->
-<section class="participation ">
-  <div class="container">
-  <h2 class="visually-hidden">Членство у професійних організаціях</h2>
-  <ul class="participation__list">
-    <li class="participation__item">
-      <img class="participation__img" src="./images/logo-naau.png" alt="логотип національної асоціації адвокатів України">
-    </li>
-    <li class="participation__item">
-      <img class="participation__img" src="./images/logo-apu.png" alt="логотип асоціації правників України">
-    </li>
+<!-- ---------------- ГАРАНТИЯ ----------------- -->
+
+  <section class="garant" id="garant-id">
+    <div class="container">
+      <h2 class="garant__title">Гарантія</h2>
+      <p class="garant__text">Ми гарантуємо якість та професійність своєї роботи. Наші позови відповідають всім вимогам закону. </p>
+      <p class="garant__text">Але іноді трапляються випадки, коли судді неправомірно не приймають до розгляду позовні заяви. У такій ситуації ми зробимо все, щоб справу було відкрито і ми не будем брати за цю роботу додаткову оплату.</p>
+        <p class="garant__text">Якщо суд так і не прийме до розгляду заяву, яку ми підготували та подали, ми повернемо 100% суми, яку отримали від вас у якості оплати нашої роботи. </p>
+    </div>
+  </section>
+
+  <!-- ---------------- УЧАСТИЕ В ОРГАНИЗАЦИЯХ -------------------------- -->
+  <section class="participation">
+    <div class="container">
+      <h2 class="visually-hidden">Членство у професійних організаціях</h2>
+     
+      <ul class="participation__list">
+        <li class="participation__item">
+          <img class="participation__img" src="./images/logo-naau.png" alt="логотип національної асоціації адвокатів України">
+        </li>
+        <li class="participation__item">
+          <img class="participation__img" src="./images/logo-apu.png" alt="логотип асоціації правників України">
+        </li>
         <li class="participation__item">
           <img class="participation__img" src="./images/logo-ao.png" alt="логотип асоціації правників України">
         </li>
-  </ul>
-</div>
-<a class="link" href="#form-hero-id">
-  <p class="hero-form__title">Замовити Консультацію</p>
-</a>
-</section>
+      </ul>
+    </div>
+  <a class="link" href="#form-hero-id">
+    <p class="hero-form__title">Замовити Консультацію</p>
+  </a>
+  </section>
 
 <!-- ---------------- КОНТАКТЫ ------------------------------- -->
 <section class="contacts" id="contacts-id">

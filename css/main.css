@@ -625,6 +625,22 @@ h1 {
       align-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .about-expert {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/bgc-about1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .about {
   padding-top: 87px;
   padding-bottom: 10px;
@@ -636,6 +652,12 @@ h1 {
 @media screen and (min-width: 768px) {
   .about {
     padding-top: 97px;
+    width: 60%;
+    background-image: none;
+  }
+  .about .container {
+    width: 100%;
+    margin-left: auto;
   }
 }
 
@@ -673,6 +695,17 @@ h1 {
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .expert {
+    padding-top: 97px;
+    width: 40%;
+  }
+  .expert .container {
+    width: 100%;
+    margin-left: auto;
+  }
+}
+
 .expert__photo {
   width: 100%;
   padding-top: 80%;
@@ -682,11 +715,24 @@ h1 {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .expert__photo {
+    padding-top: 137%;
+    background-image: url(../images/team-tab.jpg);
+  }
+}
+
 .expert__year {
   width: 100%;
   height: 175px;
   padding-top: 10px;
   background-color: #040031;
+}
+
+@media screen and (min-width: 768px) {
+  .expert__year {
+    min-height: 200px;
+  }
 }
 
 .expert__number {
@@ -707,6 +753,13 @@ h1 {
   letter-spacing: 2px;
   color: #ffe400;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .expert__text {
+    padding-left: 5px;
+    padding-right: 15px;
+  }
 }
 
 .expert__button {
@@ -741,6 +794,12 @@ h1 {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .expert__button {
+    margin-bottom: 10px;
+  }
+}
+
 .expert__button:hover, .expert__button:focus {
   -webkit-box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.8);
           box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.8);
@@ -771,6 +830,18 @@ h1 {
   background-color: #040031;
 }
 
+@media screen and (min-width: 768px) {
+  .process {
+    background-color: #ffffff;
+  }
+}
+
+.process .container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .process__title {
   font-family: Manrope, sans-serif;
   font-size: 32px;
@@ -779,6 +850,7 @@ h1 {
   letter-spacing: 2px;
   color: #ffe400;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .process__item-title {
@@ -815,6 +887,7 @@ h1 {
   margin-bottom: 10px;
   color: #c0c0c0;
   font-size: 18px;
+  text-align: center;
 }
 
 .process__button {
@@ -862,6 +935,53 @@ h1 {
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .our-process {
+    width: 67%;
+    position: relative;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: #040031;
+  }
+  .our-process::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url(/images/tel-doc-tab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client-process {
+    position: relative;
+    width: 67%;
+    margin-left: auto;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    background-color: #040031;
+  }
+  .client-process::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background-image: url(/images/doc-tab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .garant {
   padding-top: 87px;
   padding-bottom: 10px;
@@ -891,8 +1011,24 @@ h1 {
   background-color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .participation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .participation__item {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .participation__item:not(:last-child) {
+    margin-right: 45px;
+  }
 }
 
 .participation__img {

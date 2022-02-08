@@ -3,9 +3,20 @@
   padding-bottom: 10px;
   background-color: #040031;
 
+  @media screen and (min-width: 768px) {
+    background-color: $color-bg-light;
+  }
+
+  & .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &__title {
     @include accent-text(32px, 700, 1.2, 2px, $color-accent);
     margin-bottom: 30px;
+    text-align: center;
   }
 
   &__item-title {
@@ -38,6 +49,7 @@
     margin-bottom: 10px;
     color: #c0c0c0;
     font-size: 18px;
+    text-align: center;
   }
 
   &__button {
@@ -59,5 +71,54 @@
   }
   &__btn-text {
     @include accent-text(24px, 800, 1.55, 0px, $color-font-dark);
+  }
+}
+
+.our-process {
+  @media screen and (min-width: 768px) {
+    width: 67%;
+    position: relative;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: $color-bg-card;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -50%;
+      width: 50%;
+      height: 100%;
+      background-color: #fff;
+      background-image: url(/images/tel-doc-tab.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.client-process {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    width: 67%;
+    margin-left: auto;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    background-color: $color-bg-card;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 50%;
+      height: 100%;
+      background-image: url(/images/doc-tab.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }

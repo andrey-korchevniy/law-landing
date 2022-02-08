@@ -1,3 +1,15 @@
+.about-expert {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/bgc-about1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .about {
   padding-top: 87px;
   padding-bottom: 10px;
@@ -7,6 +19,13 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 97px;
+    width: 60%;
+    background-image: none;
+
+    & .container {
+      width: 100%;
+      margin-left: auto;
+    }
   }
 
   &__title {
