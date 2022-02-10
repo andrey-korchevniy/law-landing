@@ -952,7 +952,7 @@ h1 {
     width: 50%;
     height: 100%;
     background-color: #fff;
-    background-image: url(/images/tel-doc-tab.jpg);
+    background-image: url(../images/tel-doc-tab.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -976,7 +976,7 @@ h1 {
     left: -50%;
     width: 50%;
     height: 100%;
-    background-image: url(/images/doc-tab.jpg);
+    background-image: url(../images/doc-tab.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
