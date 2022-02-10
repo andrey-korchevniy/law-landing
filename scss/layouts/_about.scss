@@ -8,6 +8,11 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    align-items: center;
+  }
 }
 
 .about {
@@ -19,12 +24,16 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 97px;
-    width: 60%;
+    width: 70%;
     background-image: none;
 
     & .container {
       width: 100%;
       margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 57px;
     }
   }
 
@@ -35,14 +44,23 @@
 
     font-family: $ff-accent;
     font-size: 32px;
+    font-weight: 400;
     letter-spacing: 0.5px;
     line-height: 1.22;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 45px;
+    }
   }
 
   &__text,
   &__item {
     font-size: 18px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.6;
+    }
   }
 
   &__item::first-letter {

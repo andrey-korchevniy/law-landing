@@ -5,6 +5,12 @@
   text-align: center;
   color: gray;
 
+  @media screen and (min-width: 1200px) {
+    & .container {
+      max-width: 640px;
+    }
+  }
+
   &__text {
     padding-bottom: 30px;
     padding-top: 20px;

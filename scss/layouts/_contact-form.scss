@@ -7,8 +7,14 @@
     top: 290px;
     left: 50px;
     border-radius: 4px;
-    max-width: calc(100vw - 450px);
+    width: calc(100% - 460px);
     padding-bottom: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 290px;
+    left: calc((100% - 1200px) / 2 + 150px);
+    width: 550px;
   }
 
   &__title {
@@ -98,6 +104,10 @@
 
     @media screen and (min-width: 768px) {
       max-width: calc(100vw - 450px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 320px;
     }
   }
 

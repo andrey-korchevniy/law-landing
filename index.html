@@ -5,45 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Позови. Професійно.</title>
-  <link rel="icon" href="./images/favicon.jpg" type="image/x-icon" />
-  <title>Document</title>
+  <link rel="icon" href="./images/favicon.jpg" type="image/x-icon"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Roboto&family=Roboto+Slab:wght@700&display=swap"
-  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 
-  <!-- -------------- MENU ------------------- -->
+  <!--                       MENU                                   -->
 <header class="header" >
   <nav class="container nav">
 
     <a class="nav__logo" href="./">
-      <img class="nav__logo" src="./images/logo-gold.svg"></use>
+      <img class="nav__logo" src="./images/logo-gold.svg" alt="логотип юридичної компанії Максимум Лекс">
     </a>
 
-    <a class="nav__tel" href="tel:+380505946780">
+    <a class="nav__tel link" href="tel:+380505946780">
+      <p class="nav__tel-num">(050) 594 67 80</p>
       <svg class="nav__svg">
         <use href="./images/symbol-defs.svg#icon-phone"></use>
       </svg>
     </a>
 
-            <!-- ------- КНОПКА МОБИЛЬНОГО ОКНА ------ -->
+            <!--              КНОПКА МОБИЛЬНОГО ОКНА               -->
     <button class="nav__btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn>
       <svg class="nav__svg">
           <use href="./images/symbol-defs.svg#icon-menu"></use>
       </svg>
     </button>
-            
-            <!-- ---------------НАВИГАЦИЯ-------------- -->
-    <div class="nav__menu js-menu-container js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn href="#form-hero-id"" id="mobile-menu">
-      <ul class="nav container-mob">
+
+            <!--                    НАВИГАЦИЯ                      -->
+    <div class="nav__menu js-menu-container js-close-menu" role="navigation" aria-expanded="false" aria-controls="mobile-menu" data-menu-btn id="mobile-menu">
+      <ul class="container-nav">
         <li class="nav__item">
           <a class="nav__link link" href="#form-hero-id">
-            Зв'язатись
+            Замовити
           </a>
         </li>
         <li class="nav__item">
@@ -52,7 +52,7 @@
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link link" href="#team-id">
+          <a class="nav__link nav__link--about link" href="#team-id">
             Про нас
           </a>
         </li>
@@ -66,8 +66,8 @@
             Гарантія
           </a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link link" href="#contacts-id">
+        <li class="nav__item ">
+          <a class="nav__link nav__link--contact link" href="#contacts-id">
             Контакти
           </a>
         </li>
@@ -77,24 +77,23 @@
 </header>
 
 <main>
-  <!-- -------------- ГЕРОЙ --------------- -->
+  <!--                        ГЕРОЙ                          -->
 <section class="hero">
     <h1> <span class="accent" id="form-hero-id">Позовні заяви<br> </span>Професійно<br> <span class="accent">З гарантією</span></h1>
 
 </section>
 
-<!-- ---------------- ФОРМА НА ГЕРОЕ --------------- -->
-<section class="hero-form" >
+<!--                           ФОРМА НА ГЕРОЕ                -->
+<div class="hero-form">
   <a class="link" href="#form-hero-id"> <p class="hero-form__title">Замовити Консультацію</p></a>
 
-  <form class="hero-form__form container" name="signup_form" autocomplete="on" validate action="./php/send.php" method="POST">
-    
+  <form class="hero-form__form container" name="signup_form" autocomplete="on" action="./php/send.php" method="POST">
+
     <label class="hero-form__field">
       <input class="hero-form__input" type="text" name="name" autocomplete="name" placeholder="Ім'я" required/>
     </label>
-  
     <label class="hero-form__field">
-      <input class="hero-form__input" type="phone" name="phone" autocomplete="tel-national" placeholder="Телефон" required />
+      <input class="hero-form__input" type="tel" name="phone" placeholder="Телефон" required />
     </label>
 
     <label class="hero-form__field">
@@ -137,12 +136,12 @@
       </a>
     </li>
   </ul>
-</section>
+</div>
 
-<!-- ---------------- ПРО ПОСЛУГУ --------------------- -->
-<div class="about-expert">
+<!--                           ПРО ПОСЛУГУ                             -->
+<div class="about-expert" id="about-id">
 
-  <section  class="about" id="about-id">
+  <section  class="about" >
     <div class="container">
       <h2 class="about__title">Як скласти позов</h2>
       <p class="about__text">Правильна позовна заява – основа успіху. Якісна підготовка позову – самий важливий етап судової справи.</p>
@@ -159,7 +158,7 @@
     </div>
   </section>
 
-  <!-- ---------------- ПРО НАС ------------------------  -->
+  <!--                         ПРО НАС                                -->
   <section class="expert" id="team-id">
     <h2 class="visually-hidden">Досвідчені юристи</h2>
     <div class="expert__photo"></div>
@@ -176,7 +175,7 @@
   </section>
 </div>
 
-<!-- ---------------- ЧТО НУЖНО СДЕЛАТЬ ---------- -->
+<!--                           ЧТО НУЖНО СДЕЛАТЬ                      -->
 <section class="process" id="process-id">
   <div class="container">
     <h2 class="visually-hidden">Процедура підготовки позову</h2>
@@ -190,10 +189,6 @@
         <li class="process__item">
           <h3 class="process__item-title">2. Надайте для вивчення документи</h3>
           <p class="process__item-text">Надішліть їхні копії зручним для вас способом або надайте під час консультації.</p>
-        </li>
-        <li class="process__item">
-          <h3 class="process__item-title"></h3>
-          <p class="process__item-text"></p>
         </li>
         <li class="process__item">
           <h3 class="process__item-title">3. Отримайте консультацію</h3>
@@ -232,7 +227,7 @@
   </div>
 </section>
 
-<!-- ---------------- ГАРАНТИЯ ----------------- -->
+<!--                             ГАРАНТИЯ                                  -->
 
   <section class="garant" id="garant-id">
     <div class="container">
@@ -243,7 +238,7 @@
     </div>
   </section>
 
-  <!-- ---------------- УЧАСТИЕ В ОРГАНИЗАЦИЯХ -------------------------- -->
+  <!--                           УЧАСТИЕ В ОРГАНИЗАЦИЯХ                    -->
   <section class="participation">
     <div class="container">
       <h2 class="visually-hidden">Членство у професійних організаціях</h2>
@@ -265,12 +260,12 @@
   </a>
   </section>
 
-<!-- ---------------- КОНТАКТЫ ------------------------------- -->
+<!--                               КОНТАКТЫ                              -->
 <section class="contacts" id="contacts-id">
   <div class="container">
   <h2 class="visually-hidden">Констакти адвокатського об'єднання максимум лекс</h2>
   <address class="contacts__address">
-    <p><a class="contacts__name link" href=www.maximumlex.com">Адвокатське об'єднання "Максимум Лекс"</a></p>
+    <p><a class="contacts__name link" href="www.maximumlex.com">Адвокатське об'єднання "Максимум Лекс"</a></p>
     <p><a class="contacts__web link" href="www.maximumlex.com">www.maximumlex.com</a></p>
     <p class="contacts__place">проспект Перемоги, 26, офіс 2</p>
     <p class="contacts__place">Київ, 04116, Україна</p>
@@ -289,7 +284,7 @@
 </section>
 </main>
 
-<!-- ---------------------------------------- фУТЕР ------------------------- -->
+<!--                                 фУТЕР                                   -->
 <footer class="footer">
   <div class="container">
   <p class="footer__text"> Адвокатське об'єднання "Максимум Лекс" - українська юридична компанія, однією зі спеціалізацій якої є судова практика. Дозвольте нашій команді адвокатів допомогти вам.</p>

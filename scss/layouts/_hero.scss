@@ -16,7 +16,8 @@
   background-position: 50% 0%;
 
   @media screen and (min-width: 768px) {
-    height: 750px;
+    height: 100vh;
+    min-height: 760px;
     background-position: right;
     position: relative;
     font-size: 40px;
@@ -25,7 +26,7 @@
         rgba(256, 256, 256, 0) 80%,
         rgba(0, 0, 0, 0.9) 90%
       ),
-      url(../images/korchevniy-hero-tab1.jpg);
+      url(../images/korchevniy-hero-tab.jpg);
   }
 }
 
