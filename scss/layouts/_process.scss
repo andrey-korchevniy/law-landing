@@ -35,7 +35,7 @@
 
   &__item-text {
     margin-bottom: 30px;
-    margin-left: 350px;
+    margin-left: 50px;
     padding-right: 20px;
     color: #c0c0c0;
     font-size: 18px;
@@ -43,6 +43,7 @@
 
     @media screen and (min-width: 1200px) {
       line-height: 1.6;
+      margin-left: 350px;
     }
   }
 
